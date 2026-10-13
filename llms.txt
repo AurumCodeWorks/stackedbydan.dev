@@ -14,7 +14,7 @@ Key facts:
 - Starter, £249: 1 to 3 pages, mobile-ready, SEO-ready, Cloudflare hosting setup, domain and DNS help, Google index submission. Typically 5 to 7 days.
 - Growth, £499: 4 to 7 pages, contact form with email delivery, analytics setup, more complex layouts. Around 2 weeks.
 - Business, £999: 8 to 15 pages, advanced SEO and structured data, sitemap and robots.txt, content management and handover documentation.
-- Optional monthly support: £25/month (hosting management and uptime monitoring) or £49/month (content updates, priority support and security patches).
+- Optional extras after launch, only for completed projects and never required: managed hosting £25/month, or managed hosting plus content updates and security patches £49/month. Most clients take the code and host it themselves.
 - Privacy policy, cookie policy, terms and a cookie banner are included free on every build.
 
 ## Cloudflare development

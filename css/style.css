@@ -801,3 +801,19 @@ code {
   .nav-link { padding: 6px 7px; }
   .nav-link .prompt { display: none; }
 }
+
+/* ── Optional extras (after launch) ────────────────────────── */
+.extras { margin-top: 8px; max-width: 860px; }
+.extras-intro { font-size: 0.85rem; color: var(--text-dim); margin-bottom: 14px; line-height: 1.7; }
+.extras-list { border-top: 1px dashed var(--border); }
+.extras-list li {
+  display: grid; grid-template-columns: 17ch 1fr auto; gap: 6px 20px; align-items: baseline;
+  padding: 14px 0; border-bottom: 1px dashed var(--border);
+}
+.extras-name  { font-size: 0.85rem; font-weight: 700; color: #fff; }
+.extras-desc  { font-size: 0.82rem; color: var(--text-dim); line-height: 1.6; }
+.extras-price { font-size: 0.9rem; font-weight: 700; color: var(--green); white-space: nowrap; }
+@media (max-width: 680px) {
+  .extras-list li { grid-template-columns: 1fr auto; }
+  .extras-desc { grid-column: 1 / -1; grid-row: 2; }
+}
