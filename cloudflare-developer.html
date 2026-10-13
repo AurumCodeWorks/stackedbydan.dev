@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Cloudflare Developer UK: Workers, Pages, D1 &amp; R2 | StackedByDan</title>
+  <meta name="description" content="I'm a freelance Cloudflare developer in the UK. I build and fix Workers, Pages, D1, KV, R2 and Durable Objects apps, move sites to Cloudflare and set up DNS, Turnstile and security." />
+  <meta name="author" content="Daniel Golding" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <link rel="canonical" href="https://stackedbydan.dev/cloudflare-developer" />
+
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://stackedbydan.dev/cloudflare-developer" />
+  <meta property="og:site_name"   content="StackedByDan" />
+  <meta property="og:locale"      content="en_GB" />
+  <meta property="og:title"       content="Cloudflare Developer UK: Workers, Pages, D1 &amp; R2 | StackedByDan" />
+  <meta property="og:description" content="Freelance Cloudflare developer in the UK. Workers, Pages, D1, KV, R2 and Durable Objects builds, migrations to Cloudflare, DNS and security." />
+  <meta property="og:image"       content="https://stackedbydan.dev/assets/og-image.png" />
+  <meta property="og:image:width"  content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Cloudflare Developer UK: Workers, Pages, D1 &amp; R2 | StackedByDan" />
+  <meta name="twitter:description" content="Freelance Cloudflare developer in the UK. Workers, Pages, D1, KV, R2 and Durable Objects builds, migrations to Cloudflare, DNS and security." />
+  <meta name="twitter:image"       content="https://stackedbydan.dev/assets/og-image.png" />
+
+  <link rel="icon"             type="image/svg+xml" href="/favicon.svg" sizes="any" />
+  <link rel="icon"             type="image/png"     href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="apple-touch-icon" sizes="180x180"      href="/apple-touch-icon.png" />
+  <link rel="manifest"                              href="/site.webmanifest" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Service",
+        "@id": "https://stackedbydan.dev/cloudflare-developer#service",
+        "name": "Cloudflare development and consulting",
+        "serviceType": "Cloudflare Workers and Pages development",
+        "url": "https://stackedbydan.dev/cloudflare-developer",
+        "description": "Freelance Cloudflare development: Workers APIs, Pages sites and Pages Functions, D1, KV, R2 and Durable Objects, migrations to Cloudflare, DNS, caching, Turnstile and security configuration.",
+        "provider": { "@id": "https://stackedbydan.dev/#person" },
+        "areaServed": [
+          { "@type": "Country", "name": "United Kingdom" },
+          { "@type": "Place", "name": "Europe" }
+        ],
+        "audience": { "@type": "BusinessAudience", "name": "Businesses and development teams using Cloudflare" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://stackedbydan.dev/#person",
+        "name": "Daniel Golding",
+        "url": "https://stackedbydan.dev/",
+        "jobTitle": "Freelance Web Developer & Cloudflare Specialist",
+        "knowsAbout": ["Cloudflare Workers", "Cloudflare Pages", "Cloudflare D1", "Cloudflare KV", "Cloudflare R2", "Cloudflare Durable Objects", "Cloudflare Turnstile", "Cloudflare DNS", "Wrangler", "TypeScript"],
+        "sameAs": ["https://www.linkedin.com/in/daniel-golding-a83b89208/"]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://stackedbydan.dev/" },
+          { "@type": "ListItem", "position": 2, "name": "Cloudflare developer", "item": "https://stackedbydan.dev/cloudflare-developer" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Can you work on an existing Cloudflare Workers or Pages project?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. I can pick up an existing Worker or Pages project, find and fix bugs, add features, migrate from Pages to Workers static assets, or add D1, KV, R2 or Durable Objects. I'll read the codebase and wrangler config first and tell you honestly what I find." }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you need access to my Cloudflare account?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Usually yes, with the least access needed. The safest set-up is to add me as a member of your Cloudflare account with a scoped role, or to work in a repository that deploys through your own CI. Everything stays in your account, and you can remove access at any time." }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does Cloudflare work cost?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Every job gets a fixed-price quote after a short call or written brief, so you know the cost before work starts. Small fixes such as DNS, redirects, a broken Worker or Turnstile setup are quick jobs. Larger builds are scoped and quoted in stages." }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you move my WordPress site to Cloudflare Pages?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. I rebuild WordPress and page-builder sites as fast, hand-coded static sites on Cloudflare Pages, with 301 redirects from old URLs so you keep your Google rankings, plus DNS, SSL and email records handled for you." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap" /></noscript>
+  <link rel="stylesheet" href="/css/style.css?v=20261013" />
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    var consent = 'denied';
+    try { consent = localStorage.getItem('cookie-consent') === 'accepted' ? 'granted' : 'denied'; } catch (e) {}
+    gtag('consent', 'default', { 'analytics_storage': consent, 'ad_storage': 'denied', 'ad_user_data': 'denied', 'ad_personalization': 'denied' });
+    gtag('js', new Date());
+    gtag('config', 'G-F1EDPQS4Q8');
+    window.addEventListener('load', function () {
+      setTimeout(function () {
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-F1EDPQS4Q8';
+        document.head.appendChild(s);
+      }, 1500);
+    });
+  </script>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <div id="scroll-progress" aria-hidden="true"></div>
+  <div class="crt-overlay" aria-hidden="true"></div>
+  <canvas id="matrix-canvas" aria-hidden="true"></canvas>
+
+  <nav id="navbar" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="/" class="nav-logo">
+        <span class="prompt" aria-hidden="true">&gt;&nbsp;</span>
+        <span class="logo-text">stackedbydan<span class="accent">.dev</span></span>
+        <span class="cursor-blink" aria-hidden="true">_</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="/"              class="nav-link"><span class="prompt" aria-hidden="true">~/</span>home</a></li>
+        <li><a href="#what-i-build"  class="nav-link"><span class="prompt" aria-hidden="true">~/</span>services</a></li>
+        <li><a href="#built"         class="nav-link"><span class="prompt" aria-hidden="true">~/</span>work</a></li>
+        <li><a href="#case-study"    class="nav-link"><span class="prompt" aria-hidden="true">~/</span>case-study</a></li>
+        <li><a href="#cf-faq"        class="nav-link"><span class="prompt" aria-hidden="true">~/</span>faq</a></li>
+        <li><a href="/?project=cloudflare#contact" class="btn btn-primary nav-cta"><span class="pulse-dot" aria-hidden="true"></span>Get a quote</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+    <section id="hero" class="page-hero" aria-labelledby="hero-heading">
+      <div class="container">
+        <p class="breadcrumb"><a href="/">Home</a> <span aria-hidden="true">/</span> Cloudflare developer</p>
+        <p class="hero-eyebrow"><span class="prompt" aria-hidden="true">&gt;&nbsp;</span>Hi, I'm Dan &middot; freelance &middot; UK &amp; remote</p>
+        <h1 id="hero-heading" class="hero-title">Cloudflare developer in the UK: <span class="accent">Workers, Pages, D1 &amp; R2</span></h1>
+        <p class="hero-sub">Need someone who already knows Cloudflare's developer platform? I build, fix and extend apps on <strong>Workers and Pages</strong>, using D1, KV, R2, Durable Objects, Cron Triggers and Turnstile, and I handle the DNS, caching and security that go around them. You deal with me directly and get a fixed-price quote before any work starts.</p>
+        <div class="hero-cta">
+          <a href="/?project=cloudflare#contact" class="btn btn-primary">Get a Cloudflare quote</a>
+          <a href="mailto:hello@stackedbydan.dev?subject=Cloudflare%20project" class="btn btn-ghost">Email hello@stackedbydan.dev</a>
+        </div>
+        <ul class="hero-proof">
+          <li><span class="accent">&#10003;</span> Production apps on Workers &amp; Pages</li>
+          <li><span class="accent">&#10003;</span> Head of IT Services by day</li>
+          <li><span class="accent">&#10003;</span> Reply within 24 hours</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="what-i-build" aria-labelledby="build-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-cmd" aria-hidden="true">$ wrangler --help</span>
+          <h2 class="section-title" id="build-heading">What I can do on Cloudflare</h2>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">&#9889;</div>
+            <h3 class="service-title">Workers &amp; APIs</h3>
+            <p class="service-desc">REST APIs, webhooks, form handlers and authentication (JWT, TOTP) on Workers, in TypeScript. Rate limiting, Cron Triggers for scheduled jobs and transactional email from the Worker.</p>
+            <ul class="service-tags"><li>Workers</li><li>TypeScript</li><li>Rate Limiting</li><li>Cron Triggers</li><li>Email</li></ul>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">&#128452;</div>
+            <h3 class="service-title">D1, KV, R2 &amp; Durable Objects</h3>
+            <p class="service-desc">Relational data in D1 with proper schemas and migrations, fast lookups and caching in KV, document and asset storage in R2, and real-time multi-user state with Durable Objects.</p>
+            <ul class="service-tags"><li>D1</li><li>KV</li><li>R2</li><li>Durable Objects</li></ul>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">&#127760;</div>
+            <h3 class="service-title">Pages &amp; static sites</h3>
+            <p class="service-desc">Fast static sites on Cloudflare Pages or Workers static assets, with Pages Functions for forms and APIs, custom headers, clean URLs and Git-based CI/CD deploys.</p>
+            <ul class="service-tags"><li>Pages</li><li>Pages Functions</li><li>Static assets</li><li>CI/CD</li></ul>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">&#128666;</div>
+            <h3 class="service-title">Migrations to Cloudflare</h3>
+            <p class="service-desc">Move a site or app from shared hosting, WordPress, Netlify or Vercel to Cloudflare. DNS cut-over, 301 redirects to protect your rankings, SSL and email records, with no downtime surprises.</p>
+            <ul class="service-tags"><li>DNS</li><li>Redirects</li><li>SSL</li><li>WordPress exit</li></ul>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">&#128737;</div>
+            <h3 class="service-title">Security &amp; spam protection</h3>
+            <p class="service-desc">Turnstile on forms with server-side verification, Content Security Policy and security headers, WAF and rate-limit rules, and bot settings that block abuse without blocking customers.</p>
+            <ul class="service-tags"><li>Turnstile</li><li>CSP</li><li>WAF rules</li><li>Bots</li></ul>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">&#128269;</div>
+            <h3 class="service-title">Fixes, reviews &amp; speed</h3>
+            <p class="service-desc">A broken deploy, a Worker throwing 500s, a slow site or a confusing DNS zone. I'll find the cause, fix it and explain what happened in plain English.</p>
+            <ul class="service-tags"><li>Debugging</li><li>Caching</li><li>Core Web Vitals</li><li>Code review</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="built" aria-labelledby="built-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-cmd" aria-hidden="true">$ ls ~/cloudflare-projects</span>
+          <h2 class="section-title" id="built-heading">Things I've built on Cloudflare</h2>
+        </div>
+
+        <div class="portfolio-grid">
+          <div class="project-card reveal">
+            <h3 class="project-title">Real-time collaborative design editor</h3>
+            <p class="project-desc">A browser-based design tool where several people edit the same document at once. Served from Cloudflare Pages with Pages Functions for the API, Durable Objects for live collaboration sessions, D1 for app data, KV for saved designs and R2 for uploaded assets. Admin access is protected with JWT sessions and TOTP two-factor authentication.</p>
+            <div class="project-tech"><span>Pages Functions</span><span>Durable Objects</span><span>D1</span><span>KV</span><span>R2</span></div>
+          </div>
+          <div class="project-card reveal">
+            <h3 class="project-title">Secure document-signing web app</h3>
+            <p class="project-desc">An installable web app (PWA) for sending and signing documents. A TypeScript Worker serves the app and API across several custom domains, including a separate admin domain. Documents live in R2 and records in D1. Notification emails are sent from the Worker, Cron Triggers run scheduled housekeeping, and rate-limiting bindings protect the login and API routes.</p>
+            <div class="project-tech"><span>Workers</span><span>D1</span><span>R2</span><span>Email</span><span>Cron</span><span>Rate Limiting</span></div>
+          </div>
+          <div class="project-card reveal">
+            <h3 class="project-title">Business proposal microsite</h3>
+            <p class="project-desc">A client-facing proposal site on Cloudflare Pages, with a Pages Function that sends enquiries through Mailgun's EU region so data stays in Europe.</p>
+            <div class="project-tech"><span>Pages</span><span>Pages Functions</span><span>Mailgun EU</span></div>
+          </div>
+          <div class="project-card reveal">
+            <h3 class="project-title">Internal tools &amp; static sites on Workers</h3>
+            <p class="project-desc">Internal business apps and public sites deployed as Workers with static assets and custom domains, replacing traditional hosting with zero servers to patch.</p>
+            <div class="project-tech"><span>Workers static assets</span><span>Custom domains</span><span>Wrangler</span></div>
+          </div>
+        </div>
+        <p class="portfolio-note reveal"><span class="prompt" aria-hidden="true">&gt;</span> Client and internal projects are described without names. Happy to walk through the architecture on a call.</p>
+      </div>
+    </section>
+
+    <section id="case-study" aria-labelledby="case-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-cmd" aria-hidden="true">$ cat case-study.md</span>
+          <h2 class="section-title" id="case-heading">Case study: how this site runs on Cloudflare</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p><span class="accent">&gt;</span> <span class="highlight">Hosting.</span> Hand-coded HTML, CSS and JavaScript deployed to Cloudflare Pages from GitHub. Every push to the main branch builds a preview and goes live automatically. No server, no database, nothing to patch.</p>
+            <p><span class="accent">&gt;</span> <span class="highlight">Contact form.</span> The form posts to a Worker on <code>api.stackedbydan.dev</code>. Turnstile protects it from bots, and its script only loads when a visitor scrolls near the form, so it doesn't slow down the first page view.</p>
+            <p><span class="accent">&gt;</span> <span class="highlight">Security.</span> A <code>_headers</code> file sets a Content Security Policy, HSTS, frame and MIME protections and a locked-down Permissions-Policy on every response.</p>
+            <p><span class="accent">&gt;</span> <span class="highlight">Speed.</span> Brotli compression, year-long immutable caching for versioned CSS and JS, non-blocking fonts and no page-builder overhead. Demo sites run on their own subdomains of the same zone.</p>
+          </div>
+          <div class="terminal-window reveal">
+            <div class="terminal-titlebar">
+              <div class="terminal-dots" aria-hidden="true"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+              <span class="terminal-title">stack.txt</span>
+            </div>
+            <div class="terminal-body">
+              <div class="output-row"><span class="key">SITE     :</span><span class="value">Cloudflare Pages</span></div>
+              <div class="output-row"><span class="key">API      :</span><span class="value">Cloudflare Workers</span></div>
+              <div class="output-row"><span class="key">SPAM     :</span><span class="value">Turnstile</span></div>
+              <div class="output-row"><span class="key">DEPLOY   :</span><span class="value">GitHub &rarr; Pages CI/CD</span></div>
+              <div class="output-row"><span class="key">DEMOS    :</span><span class="value">*.stackedbydan.dev</span></div>
+              <div class="output-row"><span class="key">CMS      :</span><span class="value">none needed</span></div>
+              <div class="output-row"><span class="key">PLUGINS  :</span><span class="value">0</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" aria-labelledby="how-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-cmd" aria-hidden="true">$ cat engagement.md</span>
+          <h2 class="section-title" id="how-heading">How we'd work together</h2>
+        </div>
+        <div class="process-grid">
+          <div class="process-step reveal">
+            <div class="step-number">01</div>
+            <h3 class="step-title">Tell me the problem</h3>
+            <p class="step-desc">Send a short brief: what you're running on Cloudflare (or want to), what's broken or missing, and any deadlines.</p>
+          </div>
+          <div class="process-step reveal">
+            <div class="step-number">02</div>
+            <h3 class="step-title">Fixed-price quote</h3>
+            <p class="step-desc">Within 24 hours you get a fixed price, a timeline and exactly what's included. Bigger builds are split into stages.</p>
+          </div>
+          <div class="process-step reveal">
+            <div class="step-number">03</div>
+            <h3 class="step-title">Build in your account</h3>
+            <p class="step-desc">I work in your repository and Cloudflare account with scoped access, so everything stays yours and nothing is locked to me.</p>
+          </div>
+          <div class="process-step reveal">
+            <div class="step-number">04</div>
+            <h3 class="step-title">Handover</h3>
+            <p class="step-desc">You get working code, a written summary of what changed and why, and optional ongoing support.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cf-faq" aria-labelledby="cf-faq-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-cmd" aria-hidden="true">$ man cloudflare-dev</span>
+          <h2 class="section-title" id="cf-faq-heading">Cloudflare questions</h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item reveal">
+            <h3><button class="faq-question" aria-expanded="false"><span class="prompt" aria-hidden="true">&gt;&nbsp;</span>Can you work on an existing Cloudflare Workers or Pages project?<span class="faq-icon" aria-hidden="true">+</span></button></h3>
+            <div class="faq-answer"><p>Yes. I can pick up an existing Worker or Pages project, find and fix bugs, add features, migrate from Pages to Workers static assets, or add D1, KV, R2 or Durable Objects. I'll read the codebase and wrangler config first and tell you honestly what I find.</p></div>
+          </div>
+          <div class="faq-item reveal">
+            <h3><button class="faq-question" aria-expanded="false"><span class="prompt" aria-hidden="true">&gt;&nbsp;</span>Do you need access to my Cloudflare account?<span class="faq-icon" aria-hidden="true">+</span></button></h3>
+            <div class="faq-answer"><p>Usually yes, with the least access needed. The safest set-up is to add me as a member of your Cloudflare account with a scoped role, or to work in a repository that deploys through your own CI. Everything stays in your account, and you can remove access at any time.</p></div>
+          </div>
+          <div class="faq-item reveal">
+            <h3><button class="faq-question" aria-expanded="false"><span class="prompt" aria-hidden="true">&gt;&nbsp;</span>How much does Cloudflare work cost?<span class="faq-icon" aria-hidden="true">+</span></button></h3>
+            <div class="faq-answer"><p>Every job gets a fixed-price quote after a short call or written brief, so you know the cost before work starts. Small fixes such as DNS, redirects, a broken Worker or Turnstile setup are quick jobs. Larger builds are scoped and quoted in stages.</p></div>
+          </div>
+          <div class="faq-item reveal">
+            <h3><button class="faq-question" aria-expanded="false"><span class="prompt" aria-hidden="true">&gt;&nbsp;</span>Can you move my WordPress site to Cloudflare Pages?<span class="faq-icon" aria-hidden="true">+</span></button></h3>
+            <div class="faq-answer"><p>Yes. I rebuild WordPress and page-builder sites as fast, hand-coded static sites on Cloudflare Pages, with 301 redirects from old URLs so you keep your Google rankings, plus DNS, SSL and email records handled for you. See the <a href="/#packages">website packages</a> for fixed prices.</p></div>
+          </div>
+        </div>
+
+        <div class="services-cta" style="margin-top:48px">
+          <a href="/?project=cloudflare#contact" class="btn btn-primary">Get a Cloudflare quote</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="prompt" aria-hidden="true">&gt;&nbsp;</span>
+          <span class="logo-text">stackedbydan<span class="accent">.dev</span></span>
+          <p>I'm Dan, a UK freelance web developer &amp; Cloudflare specialist. Hand-coded websites from £249.</p>
+        </div>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <p class="footer-heading">NAVIGATE</p>
+          <ul>
+            <li><a href="/#about">./about</a></li>
+            <li><a href="/cloudflare-developer">./cloudflare</a></li>
+            <li><a href="/#services">./services</a></li>
+            <li><a href="/#packages">./pricing</a></li>
+            <li><a href="/#portfolio">./work</a></li>
+            <li><a href="/#contact">./contact</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-links" aria-label="Legal links">
+          <p class="footer-heading">LEGAL</p>
+          <ul>
+            <li><a href="/privacy-policy">./privacy_policy</a></li>
+            <li><a href="/cookie-policy">./cookie_policy</a></li>
+            <li><a href="/terms">./terms_conditions</a></li>
+            <li><a href="#" id="manage-cookies">./manage_cookies</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy;&nbsp;<span id="year">2026</span>&nbsp;stackedbydan.dev &mdash; All rights reserved.</p>
+        <p class="footer-code">Built with <span class="accent">&lt;/&gt;</span> on Cloudflare by Dan</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Back to top" title="Back to top">[ &#8679; ]</button>
+  <script src="/js/main.js?v=20261013" defer></script>
+</body>
+</html>

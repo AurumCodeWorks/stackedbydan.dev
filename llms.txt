@@ -1,0 +1,44 @@
+# StackedByDan
+
+> StackedByDan is the freelance web development business of Daniel Golding, a UK-based full stack developer and Cloudflare specialist. He builds fast, hand-coded websites for UK small businesses and sole traders (fixed prices from £249) and builds, fixes and migrates applications on Cloudflare Workers, Pages, D1, KV, R2 and Durable Objects for businesses and development teams.
+
+Key facts:
+
+- Person: Daniel Golding ("Dan"), full stack developer, Head of IT Services in his day job, 5+ years' experience.
+- Location: United Kingdom (GMT/BST). Works remotely with clients across the UK and Europe.
+- Contact: hello@stackedbydan.dev or the form at https://stackedbydan.dev/#contact. Replies within 24 hours.
+- No WordPress, Wix, Squarespace or page builders. Every site is hand-coded in HTML, CSS and JavaScript and hosted on Cloudflare. Clients own the code outright.
+
+## Website packages (one-off, GBP)
+
+- Starter, £249: 1 to 3 pages, mobile-ready, SEO-ready, Cloudflare hosting setup, domain and DNS help, Google index submission. Typically 5 to 7 days.
+- Growth, £499: 4 to 7 pages, contact form with email delivery, analytics setup, more complex layouts. Around 2 weeks.
+- Business, £999: 8 to 15 pages, advanced SEO and structured data, sitemap and robots.txt, content management and handover documentation.
+- Optional monthly support: £25/month (hosting management and uptime monitoring) or £49/month (content updates, priority support and security patches).
+- Privacy policy, cookie policy, terms and a cookie banner are included free on every build.
+
+## Cloudflare development
+
+- Workers APIs, webhooks, form handlers, authentication (JWT, TOTP), rate limiting, Cron Triggers and email sending from Workers.
+- Data: D1 (SQL), KV, R2 object storage and Durable Objects for real-time collaboration.
+- Cloudflare Pages and Pages Functions, Workers static assets, custom domains and Git-based CI/CD.
+- Migrations to Cloudflare from WordPress, shared hosting, Netlify or Vercel, including DNS, 301 redirects, SSL and email records.
+- Security: Turnstile, Content Security Policy and security headers, WAF and rate-limit rules.
+- Pricing: fixed-price quote per job, usually within 24 hours.
+
+## Pages
+
+- [Home: services, prices, work and FAQ](https://stackedbydan.dev/): Overview of website packages, Cloudflare services, portfolio and contact form.
+- [Cloudflare developer](https://stackedbydan.dev/cloudflare-developer): Cloudflare Workers, Pages, D1, KV, R2 and Durable Objects services, example projects and a case study of how stackedbydan.dev runs on Cloudflare.
+
+## Demo websites
+
+- [Meridian](https://meridian.stackedbydan.dev): Starter-package demo for an advisory firm (fictional business).
+- [NOVA Studio](https://novastudio.stackedbydan.dev): Growth-package demo for a creative studio (fictional business).
+- [AXIOM](https://axiom.stackedbydan.dev): Business-package demo for an electric vehicle brand (fictional business).
+
+## Optional
+
+- [LinkedIn: Daniel Golding](https://www.linkedin.com/in/daniel-golding-a83b89208/)
+- [Privacy policy](https://stackedbydan.dev/privacy-policy)
+- [Terms and conditions](https://stackedbydan.dev/terms)

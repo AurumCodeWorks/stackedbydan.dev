@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO -->
+  <title>UK Web Developer &amp; Cloudflare Specialist | StackedByDan</title>
+  <meta name="description" content="I build fast, hand-coded websites for UK small businesses from £249, plus Cloudflare Workers, Pages, D1 and R2 apps for teams. Free quote within 24 hours." />
+  <meta name="author" content="Daniel Golding" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <link rel="canonical" href="https://stackedbydan.dev/" />
+  <link rel="alternate" type="text/plain" title="LLM summary" href="https://stackedbydan.dev/llms.txt" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://stackedbydan.dev/" />
+  <meta property="og:site_name"   content="StackedByDan" />
+  <meta property="og:locale"      content="en_GB" />
+  <meta property="og:title"       content="UK Web Developer &amp; Cloudflare Specialist | StackedByDan" />
+  <meta property="og:description" content="Fast, hand-coded websites for UK small businesses from £249, plus Cloudflare Workers, Pages, D1 and R2 builds. No WordPress, no lock-in." />
+  <meta property="og:image"        content="https://stackedbydan.dev/assets/og-image.png" />
+  <meta property="og:image:alt"    content="StackedByDan: UK web developer and Cloudflare specialist, websites from £249" />
+  <meta property="og:image:width"  content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="UK Web Developer &amp; Cloudflare Specialist | StackedByDan" />
+  <meta name="twitter:description" content="Fast, hand-coded websites for UK small businesses from £249, plus Cloudflare Workers, Pages, D1 and R2 builds. No WordPress, no lock-in." />
+  <meta name="twitter:image"       content="https://stackedbydan.dev/assets/og-image.png" />
+
+  <!-- Favicons -->
+  <link rel="icon"             type="image/svg+xml" href="/favicon.svg" sizes="any" />
+  <link rel="icon"             type="image/png"     href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="apple-touch-icon" sizes="180x180"      href="/apple-touch-icon.png" />
+  <link rel="manifest"                              href="/site.webmanifest" />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://stackedbydan.dev/#website",
+        "url": "https://stackedbydan.dev/",
+        "name": "StackedByDan",
+        "description": "UK freelance web developer and Cloudflare specialist: hand-coded websites for small businesses and Cloudflare Workers, Pages, D1 and R2 builds.",
+        "inLanguage": "en-GB",
+        "publisher": { "@id": "https://stackedbydan.dev/#person" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://stackedbydan.dev/#person",
+        "name": "Daniel Golding",
+        "alternateName": "Dan",
+        "url": "https://stackedbydan.dev/",
+        "image": "https://stackedbydan.dev/assets/web-app-manifest-512x512.png",
+        "email": "mailto:hello@stackedbydan.dev",
+        "jobTitle": "Freelance Web Developer & Cloudflare Specialist",
+        "description": "UK-based full stack developer and Head of IT Services with 5+ years of experience. Builds hand-coded websites for small businesses and serverless applications on Cloudflare Workers, Pages, D1, KV, R2 and Durable Objects.",
+        "knowsAbout": ["Cloudflare", "Cloudflare Workers", "Cloudflare Pages", "Cloudflare D1", "Cloudflare R2", "Cloudflare KV", "Cloudflare Durable Objects", "Cloudflare Turnstile", "Cloudflare DNS", "Serverless", "Edge computing", "HTML", "CSS", "JavaScript", "TypeScript", "Angular", "Node.js", "Python", "C#", "PostgreSQL", "ScyllaDB", "Apache Cassandra", "Nginx", "Docker", "Web Development", "Technical SEO", "Web Performance"],
+        "worksFor": { "@id": "https://stackedbydan.dev/#service" },
+        "nationality": { "@type": "Country", "name": "United Kingdom" },
+        "sameAs": [
+          "https://www.linkedin.com/in/daniel-golding-a83b89208/"
+        ]
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://stackedbydan.dev/#service",
+        "name": "StackedByDan",
+        "alternateName": "StackedByDan Web Development",
+        "url": "https://stackedbydan.dev/",
+        "logo": "https://stackedbydan.dev/assets/web-app-manifest-512x512.png",
+        "image": "https://stackedbydan.dev/assets/og-image.png",
+        "email": "hello@stackedbydan.dev",
+        "priceRange": "£249-£999",
+        "currenciesAccepted": "GBP",
+        "description": "Freelance web development and Cloudflare engineering. Hand-coded, fast, mobile-ready websites for UK small businesses and sole traders, plus Cloudflare Workers, Pages, D1, KV and R2 applications, migrations and security setup.",
+        "founder": { "@id": "https://stackedbydan.dev/#person" },
+        "areaServed": [
+          { "@type": "Country", "name": "United Kingdom" },
+          { "@type": "Place", "name": "Europe" }
+        ],
+        "knowsAbout": ["Cloudflare Workers", "Cloudflare Pages", "Cloudflare D1", "Cloudflare R2", "Website design", "Technical SEO"],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Services",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "name": "Starter Website Package",
+              "description": "1 to 3 page hand-coded website. Mobile-ready, SEO-ready, hosted on Cloudflare. Ideal for sole traders.",
+              "price": "249",
+              "priceCurrency": "GBP"
+            },
+            {
+              "@type": "Offer",
+              "name": "Growth Website Package",
+              "description": "4 to 7 page website with contact form, analytics setup and more complex layouts. Ideal for small businesses.",
+              "price": "499",
+              "priceCurrency": "GBP"
+            },
+            {
+              "@type": "Offer",
+              "name": "Business Website Package",
+              "description": "8 to 15 page business website with advanced SEO, documentation and a handover guide.",
+              "price": "999",
+              "priceCurrency": "GBP"
+            },
+            {
+              "@type": "Offer",
+              "name": "Cloudflare development and consulting",
+              "description": "Cloudflare Workers, Pages, D1, KV, R2 and Durable Objects builds, migrations to Cloudflare, DNS, Turnstile and security configuration. Fixed-price quotes per project.",
+              "url": "https://stackedbydan.dev/cloudflare-developer"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://stackedbydan.dev/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do I own the code once the site is built?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Once the project is paid for, all code belongs to you outright. No licensing fees, no lock-in. If you want to self-host, you get a step-by-step Cloudflare setup guide. If you'd rather not, the managed hosting package covers everything for a fixed monthly fee." }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does a project take?",
+            "acceptedAnswer": { "@type": "Answer", "text": "A Starter site (1 to 3 pages) typically takes 5 to 7 days. A Growth build (4 to 7 pages) takes around 2 weeks. Business-tier and Cloudflare projects vary, and you get a realistic timeline in your quote before anything starts." }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you use WordPress or page builders?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No. Every site is hand-coded in HTML, CSS and JavaScript. No WordPress, Wix, Squarespace or drag-and-drop builders. That means faster load times, cleaner code, better SEO and a site that is genuinely yours." }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you help with Cloudflare Workers, Pages or an existing Cloudflare setup?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. I build and maintain production apps on Cloudflare Workers and Pages using D1, KV, R2, Durable Objects, Cron Triggers, Turnstile and Email routing. I can build something new, fix or extend an existing Worker, move a site to Cloudflare, or tidy up DNS, caching and security rules." }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you move my existing website to Cloudflare?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. I can move static sites and rebuild WordPress or page-builder sites as fast hand-coded sites on Cloudflare Pages, including DNS changes, redirects so you keep your Google rankings, SSL and email records." }
+          },
+          {
+            "@type": "Question",
+            "name": "What do you need from me to get started?",
+            "acceptedAnswer": { "@type": "Answer", "text": "A short description of your business, the pages you need, any copy or images you want to use, and ideally a couple of websites you like the look of. If you don't have copy or images ready, I can advise on that too." }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you offer hosting?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Sites are deployed on Cloudflare's global network. The managed package covers setup, DNS, uptime monitoring and maintenance for a fixed monthly fee, or you can host it yourself using the deployment guide at no extra cost." }
+          },
+          {
+            "@type": "Question",
+            "name": "What if I need changes after launch?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Small tweaks in the first 14 days after launch are included. After that, changes are covered by a monthly support package or quoted individually. Nothing happens without your approval first." }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you work with clients outside the UK?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Everything is done remotely. I'm UK-based (GMT/BST), which makes communication straightforward with most of Europe and workable further afield. Payment in GBP is preferred but alternatives can be discussed." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts: loaded without blocking first paint -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap" /></noscript>
+
+  <link rel="stylesheet" href="/css/style.css?v=20261013" />
+
+  <!-- Google tag (gtag.js), loaded after the page has rendered -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    var consent = 'denied';
+    try { consent = localStorage.getItem('cookie-consent') === 'accepted' ? 'granted' : 'denied'; } catch (e) {}
+    gtag('consent', 'default', {
+      'analytics_storage': consent,
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied'
+    });
+    gtag('js', new Date());
+    gtag('config', 'G-F1EDPQS4Q8');
+    window.addEventListener('load', function () {
+      setTimeout(function () {
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-F1EDPQS4Q8';
+        document.head.appendChild(s);
+      }, 1500);
+    });
+  </script>
+</head>
+<body>
+
+  <!-- Skip to main content -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- CRT Scanline Overlay -->
+  <div class="crt-overlay" aria-hidden="true"></div>
+
+  <!-- Matrix rain background -->
+  <canvas id="matrix-canvas" aria-hidden="true"></canvas>
+
+  <!-- ── Cookie Consent ──────────────────────────────────────── -->
+  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Cookie consent">
+    <div class="cookie-content">
+      <span class="prompt" aria-hidden="true">&gt;&nbsp;</span>
+      <p>This site uses cookies to analyse traffic and improve your experience.
+        <a href="/cookie-policy">Cookie Policy</a> &nbsp;|&nbsp;
+        <a href="/privacy-policy">Privacy Policy</a>
+      </p>
+    </div>
+    <div class="cookie-actions">
+      <button id="accept-cookies"  class="btn btn-primary">Accept all</button>
+      <button id="decline-cookies" class="btn btn-ghost">Decline</button>
+    </div>
+  </div>
+
+  <!-- ── Navigation ──────────────────────────────────────────── -->
+  <nav id="navbar" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="/" class="nav-logo">
+        <span class="prompt" aria-hidden="true">&gt;&nbsp;</span>
+        <span class="logo-text">stackedbydan<span class="accent">.dev</span></span>
+        <span class="cursor-blink" aria-hidden="true">_</span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about"      class="nav-link"><span class="prompt" aria-hidden="true">~/</span>about</a></li>
+        <li><a href="#cloudflare" class="nav-link"><span class="prompt" aria-hidden="true">~/</span>cloudflare</a></li>
+        <li><a href="#services"   class="nav-link"><span class="prompt" aria-hidden="true">~/</span>services</a></li>
+        <li><a href="#packages"   class="nav-link"><span class="prompt" aria-hidden="true">~/</span>pricing</a></li>
+        <li><a href="#portfolio"  class="nav-link"><span class="prompt" aria-hidden="true">~/</span>work</a></li>
+        <li><a href="#faq"        class="nav-link"><span class="prompt" aria-hidden="true">~/</span>faq</a></li>
+        <li><a href="#contact"    class="btn btn-primary nav-cta"><span class="pulse-dot" aria-hidden="true"></span>Get a quote</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- ── HERO ──────────────────────────────────────────────── -->
+    <section id="hero" aria-labelledby="hero-heading">
+      <div class="hero-container">
+        <div class="hero-intro">
+          <p class="hero-eyebrow"><span class="prompt" aria-hidden="true">&gt;&nbsp;</span>Hi, I'm Dan &middot; freelance developer &middot; United Kingdom</p>
+          <h1 id="hero-heading" class="hero-title">UK web developer &amp; <span class="accent">Cloudflare specialist</span></h1>
+          <p class="hero-sub">I build fast, hand-coded websites for small businesses <strong>from £249</strong>, and Workers, Pages, D1 and R2 applications for teams that run on Cloudflare. No WordPress, no page builders, no lock-in. You own every line.</p>
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn-primary">Get a free quote</a>
+            <a href="#packages" class="btn btn-ghost">See website prices</a>
+            <a href="/cloudflare-developer" class="btn btn-ghost">Cloudflare work &rarr;</a>
+          </div>
+          <ul class="hero-proof">
+            <li><span class="accent">&#10003;</span> Head of IT Services by day</li>
+            <li><span class="accent">&#10003;</span> 5+ years shipping production systems</li>
+            <li><span class="accent">&#10003;</span> Reply within 24 hours</li>
+          </ul>
+        </div>
+
+        <div class="terminal-window hero-terminal" aria-hidden="true">
+          <div class="terminal-titlebar">
+            <div class="terminal-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <span class="terminal-title">stackedbydan@dev: ~</span>
+          </div>
+          <div class="terminal-body" id="terminal-output"></div>
+        </div>
+      </div>
+      <div class="scroll-indicator" aria-hidden="true">
+        <span>scroll down</span>
+        <div class="scroll-arrow">&#9660;</div>
+      </div>
+    </section>
+
+    <!-- ── ABOUT ─────────────────────────────────────────────── -->
+    <section id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-cmd" aria-hidden="true">$ cat about.txt</span>
+          <h2 class="section-title" id="about-heading">About me</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-terminal reveal">
+            <div class="terminal-window">
+              <div class="terminal-titlebar">
+                <div class="terminal-dots" aria-hidden="true">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                </div>
+                <span class="terminal-title">whoami</span>
+              </div>
+              <div class="terminal-body">
+                <div class="t-cmd" aria-hidden="true">$ whoami</div>
+                <br />
+                <div class="output-row"><span class="key">NAME     :</span><span class="value">Daniel Golding</span></div>
+                <div class="output-row"><span class="key">DAY JOB  :</span><span class="value">Head of IT Services</span></div>
+                <div class="output-row"><span class="key">BUILDS   :</span><span class="value">Websites, web apps, APIs</span></div>
+                <div class="output-row"><span class="key">PLATFORM :</span><span class="value">Cloudflare</span></div>
+                <div class="output-row"><span class="key">EXP      :</span><span class="value">5+ years</span></div>
+                <div class="output-row"><span class="key">LOCATION :</span><span class="value">United Kingdom (remote)</span></div>
+                <div class="output-row"><span class="key">STATUS   :</span><span class="green-text">&#9679; Taking on projects</span></div>
+                <br />
+                <div class="t-cursor" aria-hidden="true">$&nbsp;<span class="cursor-blink">_</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-content">
+            <div class="about-text reveal">
+              <p><span class="accent">&gt;</span> I'm Dan, a UK-based full stack developer. By day I'm <span class="highlight">Head of IT Services</span>, responsible for the systems a whole organisation relies on. Through StackedByDan I bring that same standard to small businesses and teams who need something built properly.</p>
+              <p><span class="accent">&gt;</span> For small businesses, that means a website that loads in a blink, ranks well and never needs a plugin update. For technical teams, it means <span class="highlight">production apps on Cloudflare</span>: Workers, Pages, D1, KV, R2 and Durable Objects, plus the DNS, caching and security that go around them.</p>
+              <p><span class="accent">&gt;</span> You deal with me directly from first message to launch. No account managers, no outsourcing, no jargon.</p>
+            </div>
+            <div class="about-stats">
+              <div class="stat-card reveal"><span class="stat-number">5<span class="accent">+</span></span><span class="stat-label">Years experience</span></div>
+              <div class="stat-card reveal"><span class="stat-number">20<span class="accent">+</span></span><span class="stat-label">Projects built</span></div>
+              <div class="stat-card reveal"><span class="stat-number">£249</span><span class="stat-label">Websites from</span></div>
+              <div class="stat-card reveal"><span class="stat-number">24h</span><span class="stat-label">Reply time</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CLOUDFLARE ────────────────────────────────────────── -->
+    <section id="cloudflare" aria-labelledby="cloudflare-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-cmd" aria-hidden="true">$ wrangler whoami</span>
+          <h2 class="section-title" id="cloudflare-heading">Cloudflare developer for hire</h2>
+        </div>
+
+        <div class="packages-intro reveal">
+          <p><span class="accent">&gt;</span> Cloudflare is where I build. This site, its contact API and every demo below run on it, and so do the larger apps I've built with real-time collaboration, file storage, scheduled jobs and transactional email. If you need someone who already knows the platform's quirks, I can help.</p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">&#9889;</div>
+            <h3 class="service-title">Workers &amp; APIs</h3>
+            <p class="service-desc">Serverless APIs, form handlers, webhooks, auth and rate limiting on Workers. TypeScript, fast cold starts, deployed with Wrangler.</p>
+            <ul class="service-tags"><li>Workers</li><li>TypeScript</li><li>Rate Limiting</li><li>Cron Triggers</li></ul>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">&#128452;</div>
+            <h3 class="service-title">Data on the edge</h3>
+            <p class="service-desc">Schema design and queries for D1, key-value caching with KV, file and document storage in R2, and real-time state with Durable Objects.</p>
+            <ul class="service-tags"><li>D1</li><li>KV</li><li>R2</li><li>Durable Objects</li></ul>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">&#127760;</div>
+            <h3 class="service-title">Pages, DNS &amp; migrations</h3>
+            <p class="service-desc">Move a site to Cloudflare Pages without losing rankings: DNS, redirects, SSL, custom domains, email records, caching and security headers.</p>
+            <ul class="service-tags"><li>Pages</li><li>DNS</li><li>Turnstile</li><li>Security headers</li></ul>
+          </div>
+        </div>
+
+        <div class="services-cta">
+          <a href="/cloudflare-developer" class="btn btn-primary">Cloudflare services in detail</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SERVICES ──────────────────────────────────────────── -->
+    <section id="services" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-cmd" aria-hidden="true">$ cat services.json</span>
+          <h2 class="section-title" id="services-heading">Web development services</h2>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">&lt;/&gt;</div>
+            <h3 class="service-title">Small business websites</h3>
+            <p class="service-desc">Custom websites built from scratch: fast, mobile-ready and set up for Google from day one. Fixed prices from £249.</p>
+            <ul class="service-tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Responsive</li><li>SEO</li></ul>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">&#9881;&#65039;</div>
+            <h3 class="service-title">Web apps &amp; APIs</h3>
+            <p class="service-desc">Customer portals, booking and internal tools: REST APIs, authentication, dashboards and real-time features, built to scale.</p>
+            <ul class="service-tags"><li>TypeScript</li><li>Angular</li><li>Node.js</li><li>Python</li><li>C#</li></ul>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">&#128451;</div>
+            <h3 class="service-title">Database design</h3>
+            <p class="service-desc">Schema design, query optimisation and data migrations for relational and distributed workloads, from D1 and PostgreSQL to ScyllaDB.</p>
+            <ul class="service-tags"><li>PostgreSQL</li><li>D1 / SQLite</li><li>ScyllaDB</li><li>Cassandra</li></ul>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">&#128202;</div>
+            <h3 class="service-title">Website audit &amp; speed fixes</h3>
+            <p class="service-desc">A clear report on your current site's speed, SEO, accessibility and code quality, with the fixes ranked by impact. I can make the fixes too.</p>
+            <ul class="service-tags"><li>Core Web Vitals</li><li>SEO</li><li>Accessibility</li><li>Code review</li></ul>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">&#127912;</div>
+            <h3 class="service-title">UI / UX design</h3>
+            <p class="service-desc">Clean, intuitive layouts with consistent design systems and smooth interactions that turn visitors into enquiries.</p>
+            <ul class="service-tags"><li>Wireframing</li><li>Design systems</li><li>Accessibility</li></ul>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">&#128296;</div>
+            <h3 class="service-title">Maintenance &amp; support</h3>
+            <p class="service-desc">Hosting management, uptime monitoring, content updates and security patches for live sites, from £25 a month.</p>
+            <ul class="service-tags"><li>Hosting</li><li>Security</li><li>Updates</li><li>Monitoring</li></ul>
+          </div>
+        </div>
+
+        <div class="services-cta">
+          <a href="#contact" class="btn btn-primary">Get a quote</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PACKAGES ─────────────────────────────────────────── -->
+    <section id="packages" aria-labelledby="packages-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-cmd" aria-hidden="true">$ cat packages.json</span>
+          <h2 class="section-title" id="packages-heading">Website packages &amp; prices</h2>
+        </div>
+
+        <div class="packages-intro reveal">
+          <p><span class="accent">&gt;</span> I run StackedByDan alongside my role as Head of IT, so every project gets the same rigour I apply professionally. You get a senior-level build without the agency price tag.</p>
+          <p><span class="accent">&gt;</span> Every site is hand-coded in HTML, CSS and JavaScript and hosted on Cloudflare's global network for fast load times, solid uptime and built-in DDoS protection.</p>
+          <p class="packages-focus"><span class="prompt">&gt;</span> Fixed prices for websites. <span class="highlight">Anything needing a backend, API, database or Cloudflare app work is quoted separately</span>, usually within a day.</p>
+        </div>
+
+        <div class="pure-code-strip reveal">
+          <div class="pure-code-item"><span class="accent">&lt;/&gt;</span> Hand-coded HTML, CSS &amp; JS</div>
+          <div class="pure-code-divider"></div>
+          <div class="pure-code-item"><span class="accent">&#9632;</span> No WordPress. No Wix. No builders.</div>
+          <div class="pure-code-divider"></div>
+          <div class="pure-code-item"><span class="accent">&#10003;</span> No plugins to break</div>
+          <div class="pure-code-divider"></div>
+          <div class="pure-code-item"><span class="accent">&#8734;</span> You own every line</div>
+        </div>
+
+        <div class="pricing-grid">
+
+          <div class="pricing-card reveal" data-plan="Starter">
+            <h3 class="pricing-tier">STARTER</h3>
+            <div class="pricing-price">£249<span class="pricing-note">one-off</span></div>
+            <div class="pricing-sub">1 – 3 pages · ideal for sole traders</div>
+            <ul class="pricing-features">
+              <li>Clean, fast, mobile-ready build</li>
+              <li>Cloudflare hosting setup</li>
+              <li>Domain &amp; DNS help</li>
+              <li>SEO-ready from day one</li>
+              <li>Cookie policy included</li>
+              <li>Google index submission</li>
+              <li>You own the code outright</li>
+            </ul>
+            <a href="https://meridian.stackedbydan.dev" target="_blank" rel="noopener" class="pricing-demo">View demo: Meridian &rarr;</a>
+            <a href="#contact" class="btn btn-ghost btn-full" data-project="Starter — £249">Get started</a>
+          </div>
+
+          <div class="pricing-card popular reveal" data-plan="Growth">
+            <div class="pricing-popular-badge">MOST POPULAR</div>
+            <h3 class="pricing-tier">GROWTH</h3>
+            <div class="pricing-price">£499<span class="pricing-note">one-off</span></div>
+            <div class="pricing-sub">4 – 7 pages · ideal for small businesses</div>
+            <ul class="pricing-features">
+              <li>Everything in Starter</li>
+              <li>More complex layouts &amp; sections</li>
+              <li>Contact form with email delivery</li>
+              <li>Cloudflare analytics setup</li>
+              <li>Audience insights dashboard</li>
+              <li>Priority build timeline</li>
+              <li>You own the code outright</li>
+            </ul>
+            <a href="https://novastudio.stackedbydan.dev" target="_blank" rel="noopener" class="pricing-demo">View demo: NOVA Studio &rarr;</a>
+            <a href="#contact" class="btn btn-primary btn-full" data-project="Growth — £499">Get started</a>
+          </div>
+
+          <div class="pricing-card reveal" data-plan="Business">
+            <h3 class="pricing-tier">BUSINESS</h3>
+            <div class="pricing-price">£999<span class="pricing-note">one-off</span></div>
+            <div class="pricing-sub">8 – 15 pages · full business presence</div>
+            <ul class="pricing-features">
+              <li>Everything in Growth</li>
+              <li>Extended page count &amp; structure</li>
+              <li>Content management guide</li>
+              <li>Advanced SEO &amp; structured data</li>
+              <li>Sitemap &amp; robots.txt configured</li>
+              <li>Setup &amp; handover documentation</li>
+              <li>You own the code outright</li>
+            </ul>
+            <a href="https://axiom.stackedbydan.dev" target="_blank" rel="noopener" class="pricing-demo">View demo: AXIOM &rarr;</a>
+            <a href="#contact" class="btn btn-ghost btn-full" data-project="Business — £999">Get started</a>
+          </div>
+
+        </div>
+
+        <div class="support-grid reveal">
+          <div class="support-header">
+            <span class="prompt" aria-hidden="true">// </span>MONTHLY SUPPORT (OPTIONAL)
+          </div>
+          <div class="support-cards">
+            <div class="support-card">
+              <span class="support-price">£25<span>/mo</span></span>
+              <span class="support-name">Basic</span>
+              <span class="support-desc">Hosting management &amp; uptime monitoring</span>
+            </div>
+            <div class="support-card">
+              <span class="support-price">£49<span>/mo</span></span>
+              <span class="support-name">Priority</span>
+              <span class="support-desc">Content updates, priority support &amp; security patches</span>
+            </div>
+            <div class="support-card">
+              <span class="support-price">£0<span>/mo</span></span>
+              <span class="support-name">Take the code</span>
+              <span class="support-desc">Pay once, own it outright. Full handover guide included. No strings.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="custom-pricing-box reveal">
+          <div class="custom-pricing-header">
+            <span class="prompt" aria-hidden="true">// </span>NOT SURE WHICH FITS? CUSTOM PRICING AVAILABLE
+          </div>
+          <p>Need something outside these packages? All of the following can be scoped individually:</p>
+          <ul class="custom-pricing-list">
+            <li>Single landing pages and micro sites</li>
+            <li>Cloudflare Workers, Pages Functions, D1, KV and R2 builds</li>
+            <li>APIs and backends: REST APIs, authentication, server-side logic</li>
+            <li>Databases: D1, PostgreSQL, ScyllaDB or Cassandra design and setup</li>
+            <li>Existing sites: fixes, speed improvements, redesigns or moving to Cloudflare</li>
+          </ul>
+          <p class="custom-pricing-cta"><a href="#contact">Tell me what you need</a> and I'll come back with a fixed quote and rough timeline within 24 hours. No jargon, no hard sell.</p>
+        </div>
+
+        <div class="compliance-note reveal">
+          <span class="prompt" aria-hidden="true">// </span><span class="highlight">LEGAL PAGES INCLUDED FREE ON EVERY BUILD</span>
+          <p>Legal and compliance pages <strong>don't count</strong> towards your package page limit. Every build includes:</p>
+          <ul>
+            <li>Privacy Policy</li>
+            <li>Cookie Policy</li>
+            <li>Terms &amp; Conditions</li>
+            <li>Cookie consent banner</li>
+            <li>XML sitemap &amp; robots.txt</li>
+            <li>Google Search Console submission</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── HOW IT WORKS ─────────────────────────────────────────── -->
+    <section id="process" aria-labelledby="process-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-cmd" aria-hidden="true">$ cat process.md</span>
+          <h2 class="section-title" id="process-heading">How it works</h2>
+        </div>
+        <div class="process-grid">
+          <div class="process-step reveal">
+            <div class="step-number">01</div>
+            <h3 class="step-title">Brief</h3>
+            <p class="step-desc">Fill in the contact form or email me. Tell me about your business, what you need and any examples you like. No jargon required.</p>
+          </div>
+          <div class="process-step reveal">
+            <div class="step-number">02</div>
+            <h3 class="step-title">Quote &amp; scope</h3>
+            <p class="step-desc">Within 24 hours you get a clear price, timeline and exactly what's included. No hidden costs and no confusing small print.</p>
+          </div>
+          <div class="process-step reveal">
+            <div class="step-number">03</div>
+            <h3 class="step-title">Design &amp; build</h3>
+            <p class="step-desc">I code your site from scratch and keep you updated throughout. You can give feedback at any point, and nothing ships without your sign-off.</p>
+          </div>
+          <div class="process-step reveal">
+            <div class="step-number">04</div>
+            <h3 class="step-title">Launch &amp; handover</h3>
+            <p class="step-desc">Your site goes live on your domain and you own the code outright. Self-host with my Cloudflare guide, or let my managed hosting package handle it.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PORTFOLIO ─────────────────────────────────────────── -->
+    <section id="portfolio" aria-labelledby="portfolio-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-cmd" aria-hidden="true">$ ls projects/ --featured</span>
+          <h2 class="section-title" id="portfolio-heading">Work &amp; projects</h2>
+        </div>
+
+        <div class="portfolio-grid">
+          <div class="project-card reveal">
+            <div class="project-header">
+              <div class="project-badges">
+                <span class="project-status online">&#9679; LIVE</span>
+                <span class="project-badge internal">CASE STUDY</span>
+              </div>
+              <a href="/cloudflare-developer#case-study" class="project-link">[READ]</a>
+            </div>
+            <h3 class="project-title">stackedbydan.dev</h3>
+            <p class="project-desc">This site. Hand-coded and served from Cloudflare Pages, with a Workers contact API, Turnstile spam protection, strict security headers and demo sites on subdomains. Scores 99 for desktop performance in PageSpeed Insights.</p>
+            <div class="project-tech">
+              <span>Cloudflare Pages</span><span>Workers</span><span>Turnstile</span><span>HTML/CSS/JS</span>
+            </div>
+          </div>
+          <div class="project-card reveal">
+            <div class="project-header">
+              <div class="project-badges">
+                <span class="project-status building">&#9680; IN PROGRESS</span>
+                <span class="project-badge internal">INTERNAL</span>
+              </div>
+              <a href="#contact" class="project-link">[ENQUIRE]</a>
+            </div>
+            <h3 class="project-title">Outstanding</h3>
+            <p class="project-desc">Enterprise procurement platform covering the full lifecycle: order tracking, fulfilment, invoice processing, profit insights and dedicated customer and supplier portals.</p>
+            <div class="project-tech">
+              <span>Angular</span><span>Node.js</span><span>PostgreSQL</span>
+            </div>
+          </div>
+          <div class="project-card reveal">
+            <div class="project-header">
+              <div class="project-badges">
+                <span class="project-status building">&#9680; IN PROGRESS</span>
+                <span class="project-badge internal">INTERNAL</span>
+              </div>
+              <a href="#contact" class="project-link">[ENQUIRE]</a>
+            </div>
+            <h3 class="project-title">Slingshot</h3>
+            <p class="project-desc">A support desk and ticketing system built from the ground up. Handles ticket triage, assignment workflows, SLA tracking and team queues at scale.</p>
+            <div class="project-tech">
+              <span>Angular</span><span>Node.js</span><span>ScyllaDB</span>
+            </div>
+          </div>
+          <div class="project-card reveal">
+            <div class="project-header">
+              <div class="project-badges">
+                <span class="project-status building">&#9680; IN PROGRESS</span>
+                <span class="project-badge internal">INTERNAL</span>
+              </div>
+              <a href="#contact" class="project-link">[ENQUIRE]</a>
+            </div>
+            <h3 class="project-title">PrintSights</h3>
+            <p class="project-desc">Printer meter and field engineering platform. Tracks device usage, meter readings and engineer activity across a fleet, with maintenance scheduling and insights.</p>
+            <div class="project-tech">
+              <span>Angular</span><span>Node.js</span><span>ScyllaDB</span>
+            </div>
+          </div>
+        </div>
+
+        <p class="portfolio-note reveal">
+          <span class="prompt" aria-hidden="true">&gt;</span>
+          Internal projects are built for organisations I work with, and SaaS releases are planned. Enquire for early access or a bespoke build.
+        </p>
+
+        <div class="demos-header reveal">
+          <span class="prompt" aria-hidden="true">$&nbsp;</span>
+          <h3 class="demos-label">Website demos (one per package)</h3>
+        </div>
+
+        <div class="portfolio-grid demos-grid">
+          <div class="project-card reveal">
+            <div class="project-header">
+              <div class="project-badges">
+                <span class="project-status demo">&#9632; STARTER DEMO</span>
+              </div>
+              <a href="https://meridian.stackedbydan.dev" class="project-link" target="_blank" rel="noopener">[VIEW DEMO]</a>
+            </div>
+            <h4 class="project-title">Meridian</h4>
+            <p class="project-desc">A polished advisory and consulting site. Clean, professional layout designed to showcase financial and strategic services.</p>
+            <div class="project-tech">
+              <span>3 pages</span><span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+          <div class="project-card reveal">
+            <div class="project-header">
+              <div class="project-badges">
+                <span class="project-status demo">&#9632; GROWTH DEMO</span>
+              </div>
+              <a href="https://novastudio.stackedbydan.dev" class="project-link" target="_blank" rel="noopener">[VIEW DEMO]</a>
+            </div>
+            <h4 class="project-title">NOVA Studio</h4>
+            <p class="project-desc">Creative digital studio site for designers and agencies. Bold visual identity, portfolio-led layout and rich animated UI.</p>
+            <div class="project-tech">
+              <span>6 pages</span><span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+          <div class="project-card reveal">
+            <div class="project-header">
+              <div class="project-badges">
+                <span class="project-status demo">&#9632; BUSINESS DEMO</span>
+              </div>
+              <a href="https://axiom.stackedbydan.dev" class="project-link" target="_blank" rel="noopener">[VIEW DEMO]</a>
+            </div>
+            <h4 class="project-title">AXIOM</h4>
+            <p class="project-desc">Luxury electric vehicle brand site. Cinematic hero sections, spec showcases and a premium dark aesthetic for a high-end EV marque.</p>
+            <div class="project-tech">
+              <span>10 pages</span><span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <p class="portfolio-note reveal">
+          <span class="prompt" aria-hidden="true">&gt;</span>
+          Demos are fictional businesses built to show design range at each package level.
+        </p>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS: add here once real client reviews are collected -->
+
+    <!-- ── FAQ ──────────────────────────────────────────────────── -->
+    <section id="faq" aria-labelledby="faq-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-cmd" aria-hidden="true">$ man faq</span>
+          <h2 class="section-title" id="faq-heading">Frequently asked questions</h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item reveal">
+            <h3><button class="faq-question" aria-expanded="false">
+              <span class="prompt" aria-hidden="true">&gt;&nbsp;</span>Do I own the code once the site is built?<span class="faq-icon" aria-hidden="true">+</span>
+            </button></h3>
+            <div class="faq-answer"><p>Yes. Once the project is paid for, all code belongs to you outright. No licensing fees, no lock-in. If you want to self-host, you get a step-by-step Cloudflare setup guide. If you'd rather not, the managed hosting package covers everything for a fixed monthly fee.</p></div>
+          </div>
+          <div class="faq-item reveal">
+            <h3><button class="faq-question" aria-expanded="false">
+              <span class="prompt" aria-hidden="true">&gt;&nbsp;</span>How long does a project take?<span class="faq-icon" aria-hidden="true">+</span>
+            </button></h3>
+            <div class="faq-answer"><p>A Starter site (1 to 3 pages) typically takes 5 to 7 days. A Growth build (4 to 7 pages) takes around 2 weeks. Business-tier and Cloudflare projects vary, and you get a realistic timeline in your quote before anything starts.</p></div>
+          </div>
+          <div class="faq-item reveal">
+            <h3><button class="faq-question" aria-expanded="false">
+              <span class="prompt" aria-hidden="true">&gt;&nbsp;</span>Do you use WordPress or page builders?<span class="faq-icon" aria-hidden="true">+</span>
+            </button></h3>
+            <div class="faq-answer"><p>No. Every site is hand-coded in HTML, CSS and JavaScript. No WordPress, Wix, Squarespace or drag-and-drop builders. That means faster load times, cleaner code, better SEO and a site that is genuinely yours.</p></div>
+          </div>
+          <div class="faq-item reveal">
+            <h3><button class="faq-question" aria-expanded="false">
+              <span class="prompt" aria-hidden="true">&gt;&nbsp;</span>Can you help with Cloudflare Workers, Pages or an existing Cloudflare setup?<span class="faq-icon" aria-hidden="true">+</span>
+            </button></h3>
+            <div class="faq-answer"><p>Yes. I build and maintain production apps on Cloudflare Workers and Pages using D1, KV, R2, Durable Objects, Cron Triggers, Turnstile and Email routing. I can build something new, fix or extend an existing Worker, move a site to Cloudflare, or tidy up DNS, caching and security rules. <a href="/cloudflare-developer">More on Cloudflare work</a>.</p></div>
+          </div>
+          <div class="faq-item reveal">
+            <h3><button class="faq-question" aria-expanded="false">
+              <span class="prompt" aria-hidden="true">&gt;&nbsp;</span>Can you move my existing website to Cloudflare?<span class="faq-icon" aria-hidden="true">+</span>
+            </button></h3>
+            <div class="faq-answer"><p>Yes. I can move static sites and rebuild WordPress or page-builder sites as fast hand-coded sites on Cloudflare Pages, including DNS changes, redirects so you keep your Google rankings, SSL and email records.</p></div>
+          </div>
+          <div class="faq-item reveal">
+            <h3><button class="faq-question" aria-expanded="false">
+              <span class="prompt" aria-hidden="true">&gt;&nbsp;</span>What do you need from me to get started?<span class="faq-icon" aria-hidden="true">+</span>
+            </button></h3>
+            <div class="faq-answer"><p>A short description of your business, the pages you need, any copy or images you want to use, and ideally a couple of websites you like the look of. If you don't have copy or images ready, I can advise on that too.</p></div>
+          </div>
+          <div class="faq-item reveal">
+            <h3><button class="faq-question" aria-expanded="false">
+              <span class="prompt" aria-hidden="true">&gt;&nbsp;</span>Do you offer hosting?<span class="faq-icon" aria-hidden="true">+</span>
+            </button></h3>
+            <div class="faq-answer"><p>Yes. Sites are deployed on Cloudflare's global network. The managed package covers setup, DNS, uptime monitoring and maintenance for a fixed monthly fee, or you can host it yourself using the deployment guide at no extra cost.</p></div>
+          </div>
+          <div class="faq-item reveal">
+            <h3><button class="faq-question" aria-expanded="false">
+              <span class="prompt" aria-hidden="true">&gt;&nbsp;</span>What if I need changes after launch?<span class="faq-icon" aria-hidden="true">+</span>
+            </button></h3>
+            <div class="faq-answer"><p>Small tweaks in the first 14 days after launch are included. After that, changes are covered by a monthly support package or quoted individually. Nothing happens without your approval first.</p></div>
+          </div>
+          <div class="faq-item reveal">
+            <h3><button class="faq-question" aria-expanded="false">
+              <span class="prompt" aria-hidden="true">&gt;&nbsp;</span>Do you work with clients outside the UK?<span class="faq-icon" aria-hidden="true">+</span>
+            </button></h3>
+            <div class="faq-answer"><p>Yes. Everything is done remotely. I'm UK-based (GMT/BST), which makes communication straightforward with most of Europe and workable further afield. Payment in GBP is preferred but alternatives can be discussed.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CONTACT ────────────────────────────────────────────── -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-cmd" aria-hidden="true">$ ./contact.sh --new-project</span>
+          <h2 class="section-title" id="contact-heading">Get a free quote</h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="reveal">
+            <div class="terminal-window">
+              <div class="terminal-titlebar">
+                <div class="terminal-dots" aria-hidden="true">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                </div>
+                <span class="terminal-title">contact.cfg</span>
+              </div>
+              <div class="terminal-body">
+                <div class="output-row"><span class="key">EMAIL    :</span><a href="mailto:hello@stackedbydan.dev" class="value">hello@stackedbydan.dev</a></div>
+                <div class="output-row"><span class="key">LINKEDIN :</span><a href="https://www.linkedin.com/in/daniel-golding-a83b89208/" class="value" target="_blank" rel="noopener">Daniel Golding</a></div>
+                <br />
+                <div class="output-row"><span class="key">STATUS   :</span><span class="green-text">&#9679; Accepting projects</span></div>
+                <div class="output-row"><span class="key">RESPONSE :</span><span class="value">Within 24 hours</span></div>
+                <div class="output-row"><span class="key">TIMEZONE :</span><span class="value">GMT / BST (UK)</span></div>
+                <br />
+                <div class="t-cursor" aria-hidden="true">$&nbsp;<span class="cursor-blink">_</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-wrapper reveal">
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="name"><span class="prompt" aria-hidden="true">&gt;</span> NAME</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name" />
+              </div>
+              <div class="form-group">
+                <label for="email"><span class="prompt" aria-hidden="true">&gt;</span> EMAIL</label>
+                <input type="email" id="email" name="email" placeholder="you@business.co.uk" required autocomplete="email" />
+              </div>
+              <div class="form-group">
+                <label for="project"><span class="prompt" aria-hidden="true">&gt;</span> WHAT DO YOU NEED?</label>
+                <select id="project" name="project">
+                  <option value="">-- Select an option --</option>
+                  <option value="Starter — £249">Starter website: £249 (1–3 pages)</option>
+                  <option value="Growth — £499">Growth website: £499 (4–7 pages)</option>
+                  <option value="Business — £999">Business website: £999 (8–15 pages)</option>
+                  <option value="Cloudflare work">Cloudflare work (Workers, Pages, D1, R2, migration)</option>
+                  <option value="Bespoke / Custom">Web app, API or something custom</option>
+                  <option value="Website audit">Audit or speed fix for an existing site</option>
+                  <option value="Monthly Support">Monthly support</option>
+                  <option value="Just a Chat">Just a chat</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message"><span class="prompt" aria-hidden="true">&gt;</span> MESSAGE</label>
+                <textarea id="message" name="message" placeholder="Tell me about your business and what you need..." rows="5" required></textarea>
+              </div>
+              <div class="cf-turnstile" data-sitekey="0x4AAAAAAC_dnjbrFnZNWPGG" data-theme="dark"></div>
+              <button type="submit" class="btn btn-primary btn-full">Send message</button>
+              <div id="form-status" class="form-status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ────────────────────────────────────────────────── -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="prompt" aria-hidden="true">&gt;&nbsp;</span>
+          <span class="logo-text">stackedbydan<span class="accent">.dev</span></span>
+          <p>I'm Dan, a UK freelance web developer &amp; Cloudflare specialist. Hand-coded websites from £249.</p>
+        </div>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <p class="footer-heading">NAVIGATE</p>
+          <ul>
+            <li><a href="#about">./about</a></li>
+            <li><a href="/cloudflare-developer">./cloudflare</a></li>
+            <li><a href="#services">./services</a></li>
+            <li><a href="#packages">./pricing</a></li>
+            <li><a href="#portfolio">./work</a></li>
+            <li><a href="#contact">./contact</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-links" aria-label="Legal links">
+          <p class="footer-heading">LEGAL</p>
+          <ul>
+            <li><a href="/privacy-policy">./privacy_policy</a></li>
+            <li><a href="/cookie-policy">./cookie_policy</a></li>
+            <li><a href="/terms">./terms_conditions</a></li>
+            <li><a href="#" id="manage-cookies">./manage_cookies</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy;&nbsp;<span id="year">2026</span>&nbsp;stackedbydan.dev &mdash; All rights reserved.</p>
+        <p class="footer-code">Built with <span class="accent">&lt;/&gt;</span> on Cloudflare by Dan</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Back to top" title="Back to top">[ &#8679; ]</button>
+
+  <script src="/js/main.js?v=20261013" defer></script>
+</body>
+</html>
