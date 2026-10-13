@@ -28,6 +28,7 @@ Key facts:
 
 ## Hosting and infrastructure
 
+- Web apps are built with React, Angular, TypeScript, Node.js, Python and C#.
 - Not every project runs on Cloudflare. Dan also builds and hosts applications on Linux servers (Nginx, Docker), Microsoft Azure and DigitalOcean, and puts Cloudflare in front of existing servers for DNS, caching, SSL and WAF protection.
 
 ## Pages

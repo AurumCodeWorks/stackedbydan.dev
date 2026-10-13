@@ -309,7 +309,15 @@ main { counter-reset: sec; }
 }
 .service-card:hover::before { left: 100%; }
 .service-card:hover { border-color: var(--border-hover); transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,255,65,0.08); }
-.service-icon { font-size: 1.8rem; margin-bottom: 14px; }
+.service-icon {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 46px; height: 46px; margin-bottom: 18px;
+  color: var(--green); background: rgba(0,255,65,0.05);
+  border: 1px solid var(--border); border-radius: var(--radius);
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+.service-icon svg { display: block; }
+.service-card:hover .service-icon { border-color: var(--green); box-shadow: var(--green-glow-sm); }
 .service-title { font-size: 1rem; font-weight: 700; color: #fff; margin-bottom: 12px; }
 .service-desc { font-size: 0.88rem; color: var(--text-dim); line-height: 1.8; margin-bottom: 20px; }
 .service-tags { display: flex; flex-wrap: wrap; gap: 6px; }
