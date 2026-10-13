@@ -4,7 +4,7 @@
 
 Key facts:
 
-- Person: Daniel Golding ("Dan"), full stack developer, Head of IT Services in his day job, 5+ years' experience.
+- Person: Daniel Golding ("Dan"), full stack developer, Head of IT Services as a day job, 10+ years' experience.
 - Location: United Kingdom (GMT/BST). Works remotely with clients across the UK and Europe.
 - Contact: hello@stackedbydan.dev or the form at https://stackedbydan.dev/#contact. Replies within 24 hours.
 - No WordPress, Wix, Squarespace or page builders. Every site is hand-coded in HTML, CSS and JavaScript and hosted on Cloudflare. Clients own the code outright.
@@ -25,6 +25,10 @@ Key facts:
 - Migrations to Cloudflare from WordPress, shared hosting, Netlify or Vercel, including DNS, 301 redirects, SSL and email records.
 - Security: Turnstile, Content Security Policy and security headers, WAF and rate-limit rules.
 - Pricing: fixed-price quote per job, usually within 24 hours.
+
+## Hosting and infrastructure
+
+- Not every project runs on Cloudflare. Dan also builds and hosts applications on Linux servers (Nginx, Docker), Microsoft Azure and DigitalOcean, and puts Cloudflare in front of existing servers for DNS, caching, SSL and WAF protection.
 
 ## Pages
 
