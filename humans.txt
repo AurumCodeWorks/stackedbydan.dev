@@ -8,4 +8,5 @@ Last update:  2026-10-13
 Language:     English (GB)
 Standards:    HTML5, CSS3, ES2022
 Components:   Pure code — no frameworks, no build tools
-Hosted on:    Cloudflare Pages + Workers
+Hosted on:    Cloudflare Workers (static assets)
+Deploys:      GitHub -> Workers Builds
