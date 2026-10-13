@@ -1,0 +1,15 @@
+// stackedbydan.dev: static site served by Workers static assets.
+// Deploys automatically from GitHub (Workers Builds) or with `npx wrangler deploy`.
+{
+  "name": "stackedbydan",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": ".",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  },
+  "routes": [
+    { "pattern": "stackedbydan.dev", "custom_domain": true }
+  ],
+  "workers_dev": false
+}

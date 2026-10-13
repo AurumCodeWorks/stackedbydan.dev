@@ -97,7 +97,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap" /></noscript>
-  <link rel="stylesheet" href="/css/style.css?v=20261013c" />
+  <link rel="stylesheet" href="/css/style.css?v=20261013d" />
 
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -256,7 +256,7 @@
 
         <div class="about-grid">
           <div class="about-text reveal">
-            <p><span class="accent">&gt;</span> <span class="highlight">Hosting.</span> Hand-coded HTML, CSS and JavaScript deployed to Cloudflare Pages from GitHub. Every push to the main branch builds a preview and goes live automatically. No server, no database, nothing to patch.</p>
+            <p><span class="accent">&gt;</span> <span class="highlight">Hosting.</span> Hand-coded HTML, CSS and JavaScript served by Cloudflare Workers static assets and deployed from GitHub. Every push to the main branch goes live automatically. No server, no database, nothing to patch.</p>
             <p><span class="accent">&gt;</span> <span class="highlight">Contact form.</span> The form posts to a Worker on <code>api.stackedbydan.dev</code>. Turnstile protects it from bots, and its script only loads when a visitor scrolls near the form, so it doesn't slow down the first page view.</p>
             <p><span class="accent">&gt;</span> <span class="highlight">Security.</span> A <code>_headers</code> file sets a Content Security Policy, HSTS, frame and MIME protections and a locked-down Permissions-Policy on every response.</p>
             <p><span class="accent">&gt;</span> <span class="highlight">Speed.</span> Brotli compression, year-long immutable caching for versioned CSS and JS, non-blocking fonts and no page-builder overhead. Demo sites run on their own subdomains of the same zone.</p>
@@ -267,10 +267,10 @@
               <span class="terminal-title">stack.txt</span>
             </div>
             <div class="terminal-body">
-              <div class="output-row"><span class="key">SITE     :</span><span class="value">Cloudflare Pages</span></div>
+              <div class="output-row"><span class="key">SITE     :</span><span class="value">Workers static assets</span></div>
               <div class="output-row"><span class="key">API      :</span><span class="value">Cloudflare Workers</span></div>
               <div class="output-row"><span class="key">SPAM     :</span><span class="value">Turnstile</span></div>
-              <div class="output-row"><span class="key">DEPLOY   :</span><span class="value">GitHub &rarr; Pages CI/CD</span></div>
+              <div class="output-row"><span class="key">DEPLOY   :</span><span class="value">GitHub &rarr; Workers Builds</span></div>
               <div class="output-row"><span class="key">DEMOS    :</span><span class="value">*.stackedbydan.dev</span></div>
               <div class="output-row"><span class="key">CMS      :</span><span class="value">none needed</span></div>
               <div class="output-row"><span class="key">PLUGINS  :</span><span class="value">0</span></div>
@@ -381,6 +381,6 @@
   </footer>
 
   <button id="back-to-top" aria-label="Back to top" title="Back to top">[ &uarr; top ]</button>
-  <script src="/js/main.js?v=20261013c" defer></script>
+  <script src="/js/main.js?v=20261013d" defer></script>
 </body>
 </html>

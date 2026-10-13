@@ -55,7 +55,7 @@
   const SEQ = [
     { type: 'cmd',    text: '$ wrangler deploy' },
     { type: 'load',   label: 'Building site       ', tag: 'OK' },
-    { type: 'load',   label: 'Uploading to Pages  ', tag: 'OK' },
+    { type: 'load',   label: 'Uploading assets    ', tag: 'OK' },
     { type: 'load',   label: 'Workers API         ', tag: 'OK' },
     { type: 'load',   label: 'Turnstile + headers ', tag: 'OK' },
     { type: 'blank' },

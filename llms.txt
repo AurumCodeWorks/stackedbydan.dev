@@ -45,9 +45,9 @@ Key facts:
 
 ## Demo websites
 
-- [Meridian](https://meridian.stackedbydan.dev): Starter-package demo for an advisory firm (fictional business).
-- [NOVA Studio](https://novastudio.stackedbydan.dev): Growth-package demo for a creative studio (fictional business).
-- [AXIOM](https://axiom.stackedbydan.dev): Business-package demo for an electric vehicle brand (fictional business).
+- [Meridian](https://demo1.stackedbydan.dev): Starter-package demo for an advisory firm (fictional business).
+- [NOVA Studio](https://demo2.stackedbydan.dev): Growth-package demo for a creative studio (fictional business).
+- [AXIOM](https://demo3.stackedbydan.dev): Business-package demo for an electric vehicle brand (fictional business).
 
 ## Optional
 
