@@ -152,7 +152,8 @@ main { counter-reset: sec; }
 .t-green    { color: var(--green); padding-left: 2ch; text-shadow: var(--green-glow-sm); }
 .t-hl       { color: var(--blue); font-weight: 700; font-size: 1rem; padding-left: 0; }
 .t-cursor   { color: var(--green); }
-.output-row { display: flex; gap: 8px; }
+.output-row { display: flex; gap: 8px; flex-wrap: wrap; }
+.output-row .value { overflow-wrap: anywhere; min-width: 0; }
 .key { color: var(--text-dim); min-width: 12ch; }
 .value { color: var(--text-primary); }
 
@@ -353,12 +354,12 @@ main { counter-reset: sec; }
 @media (max-width: 760px) {
   .pure-code-strip { flex-direction: column; align-items: flex-start; gap: 8px; }
   .pure-code-divider { display: none; }
-  .pure-code-item { padding: 0; }
+  .pure-code-item { padding: 0; white-space: normal; }
 }
 
 .pricing-grid {
   display: grid; grid-template-columns: repeat(3, 1fr);
-  gap: 28px; margin-bottom: 56px; align-items: start;
+  gap: 28px; margin-bottom: 56px; align-items: stretch;
 }
 .pricing-card {
   background: var(--bg-card); border: 1px solid var(--border);
@@ -487,7 +488,8 @@ main { counter-reset: sec; }
 .demos-grid .project-card:hover { border-color: rgba(192,132,252,0.4); box-shadow: 0 8px 32px rgba(192,132,252,0.07); }
 
 /* ── CONTACT ───────────────────────────────────────────────── */
-.contact-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: 40px; align-items: start; }
+.contact-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr); gap: 40px; align-items: start; }
+.contact-grid > * { min-width: 0; }
 .contact-form { display: flex; flex-direction: column; gap: 18px; }
 .form-group { display: flex; flex-direction: column; gap: 6px; }
 .form-group label { font-size: 0.72rem; color: var(--text-dim); letter-spacing: 0.08em; }
@@ -723,7 +725,7 @@ footer {
   .testimonials-grid { grid-template-columns: 1fr; }
   .process-grid { grid-template-columns: repeat(2, 1fr); gap: 32px; }
   .process-grid::before { display: none; }
-  .contact-grid { grid-template-columns: 1fr; }
+  .contact-grid { grid-template-columns: minmax(0, 1fr); }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .about-stats { grid-template-columns: repeat(2, 1fr); }
 }
