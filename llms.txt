@@ -1,6 +1,6 @@
 # StackedByDan
 
-> StackedByDan is the freelance web development business of Daniel Golding, a UK-based full stack developer and Cloudflare specialist. He builds fast, hand-coded websites for UK small businesses and sole traders (fixed prices from £249) and builds, fixes and migrates applications on Cloudflare Workers, Pages, D1, KV, R2 and Durable Objects for businesses and development teams.
+> StackedByDan is the freelance web development business of Daniel Golding, a UK-based full stack developer and Cloudflare specialist. Dan builds fast, hand-coded websites for UK small businesses and sole traders (fixed prices from £249) and builds, fixes and migrates applications on Cloudflare Workers, Pages, D1, KV, R2 and Durable Objects for businesses and development teams.
 
 Key facts:
 
@@ -17,6 +17,14 @@ Key facts:
 - Optional extras after launch, only for completed projects and never required: managed hosting £25/month, or managed hosting plus content updates and security patches £49/month. Most clients take the code and host it themselves.
 - Privacy policy, cookie policy, terms and a cookie banner are included free on every build.
 
+## Other services
+
+- Web apps and APIs: customer portals, booking and internal tools, dashboards and real-time features (React, Angular, TypeScript, Node.js, Python, C#).
+- Redesigns: rebuilding slow WordPress, Wix or Squarespace sites as fast hand-coded sites, keeping content and Google rankings with 301 redirects.
+- Website audits and speed fixes: a ranked report on speed (Core Web Vitals), SEO, accessibility and code quality, with optional fixes.
+- Database design: schema design, query optimisation and migrations for D1, PostgreSQL, ScyllaDB and Cassandra.
+- UI/UX design: layouts, design systems and accessible interfaces.
+
 ## Cloudflare development
 
 - Workers APIs, webhooks, form handlers, authentication (JWT, TOTP), rate limiting, Cron Triggers and email sending from Workers.
@@ -28,7 +36,6 @@ Key facts:
 
 ## Hosting and infrastructure
 
-- Web apps are built with React, Angular, TypeScript, Node.js, Python and C#.
 - Not every project runs on Cloudflare. Dan also builds and hosts applications on Linux servers (Nginx, Docker), Microsoft Azure and DigitalOcean, and puts Cloudflare in front of existing servers for DNS, caching, SSL and WAF protection.
 
 ## Pages
