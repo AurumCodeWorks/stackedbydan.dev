@@ -931,3 +931,20 @@ code {
 @media (pointer: coarse) {
   footer { padding-bottom: 76px; }
 }
+
+/* ── Legibility tune ───────────────────────────────────────────
+   #c8c8c8 is only a mid grey, and Inter at 400 renders thinner
+   than monospace at the same size, so prose read as washed out
+   on a near-black background. Brighter text plus a slightly
+   heavier variable weight fixes the perceived dimness. */
+:root {
+  --text-primary: #e6e9ee;   /* was #c8c8c8 — now 14.7:1 to 16.3:1 */
+  --text-dim:     #a8b1bb;   /* was #949ca6 — now  8.2:1 to  9.1:1 */
+}
+
+.hero-sub, .about-text, .about-text p, .service-desc, .project-desc,
+.step-desc, .faq-answer p, .packages-note, .portfolio-note,
+.support-desc, .custom-pricing-box > p, .audit-price-list li,
+.hero-proof li, .footer-brand p {
+  font-weight: 450;
+}
