@@ -925,3 +925,9 @@ code {
 @media (min-width: 1600px) {
   .about-text p, .faq-answer p { max-width: 72ch; }
 }
+
+/* The floating WhatsApp button overlays whatever is at the bottom-left.
+   Reserve space at the end of the page so it never traps footer content. */
+@media (pointer: coarse) {
+  footer { padding-bottom: 76px; }
+}
