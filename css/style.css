@@ -819,3 +819,109 @@ code {
   .extras-list li { grid-template-columns: 1fr auto; }
   .extras-desc { grid-column: 1 / -1; grid-row: 2; }
 }
+
+/* ââ WhatsApp float ââââââââââââââââââââââââââââââââââââââââââ */
+.wa-float {
+  position: fixed; bottom: 28px; left: 28px; z-index: 900;
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--bg-card); color: #25d366;
+  border: 1px solid rgba(37, 211, 102, 0.45);
+  border-radius: var(--radius);
+  padding: 9px 14px;
+  font-family: var(--font); font-size: 0.8rem; font-weight: 700;
+  text-decoration: none;
+  transition: background var(--transition), color var(--transition), box-shadow var(--transition);
+}
+.wa-float:hover, .wa-float:focus-visible {
+  background: #25d366; color: #04210f;
+  box-shadow: 0 0 12px rgba(37, 211, 102, 0.55);
+}
+.wa-float svg { flex: none; }
+@media (max-width: 560px) {
+  .wa-float { bottom: 20px; left: 16px; padding: 10px; }
+  .wa-float span { display: none; }
+}
+@media (prefers-reduced-motion: reduce) { .wa-float { transition: none; } }
+
+/* ── Audit price list ──────────────────────────────────────── */
+.audit-price-list { list-style: none; margin: 18px 0; padding: 0; display: grid; gap: 10px; }
+.audit-price-list li { border: 1px solid var(--border); border-radius: var(--radius); padding: 12px 16px; background: var(--bg-card); font-size: 0.9rem; }
+.audit-price-list strong { color: var(--green); font-size: 1.05rem; margin-right: 8px; }
+
+/* ============================================================
+   ACCESSIBILITY & READABILITY PASS (WCAG 2.1 AA)
+   ============================================================ */
+
+:root {
+  /* --text-dim was #555: 2.40:1 on .bg-card, 2.66:1 on page bg.
+     Both well under the 4.5:1 AA minimum, and it carried most of
+     the body copy on the site. #949ca6 measures 6.44:1 worst case
+     while staying clearly secondary to --text-primary. */
+  --text-dim: #949ca6;
+
+  /* Humanist sans for running prose. JetBrains Mono stays on
+     headings, nav, buttons, tags and terminal panels, so the
+     look is unchanged, only long-form text gets easier to read. */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.hero-sub,
+.about-text, .about-text p,
+.service-desc,
+.project-desc,
+.step-desc,
+.faq-answer p,
+.pricing-sub,
+.packages-note,
+.support-desc,
+.portfolio-note,
+.custom-pricing-box > p,
+.audit-price-list li,
+.footer-brand p,
+.hero-proof li {
+  font-family: var(--font-sans);
+  letter-spacing: 0;
+}
+
+/* Sizes raised to comfortable reading values; monospace reads
+   smaller than sans at the same px, so these were undersized. */
+.hero-sub       { font-size: 1.05rem; line-height: 1.75; max-width: 64ch; }
+.about-text     { font-size: 1rem;    line-height: 1.8; }
+.about-text p   { max-width: 68ch; }
+.service-desc   { font-size: 0.97rem; line-height: 1.7; }
+.project-desc   { font-size: 0.95rem; line-height: 1.7; }
+.step-desc      { font-size: 0.95rem; line-height: 1.7; }
+.faq-answer p   { font-size: 1rem;    line-height: 1.75; max-width: 74ch; }
+.pricing-sub    { font-size: 0.88rem; }
+.support-desc   { font-size: 0.88rem; line-height: 1.65; }
+.packages-note  { font-size: 0.93rem; line-height: 1.75; }
+.portfolio-note { font-size: 0.93rem; line-height: 1.75; }
+.hero-proof li  { font-size: 0.95rem; }
+.breadcrumb     { font-size: 0.85rem; }
+
+/* WCAG 1.4.1: meaning must not rely on colour alone, so links
+   inside prose are underlined rather than just green. */
+.hero-sub a, .about-text a, .service-desc a, .project-desc a,
+.faq-answer a, .portfolio-note a, .packages-note a, .audit-price-list a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+
+/* WCAG 2.4.7: focus must be clearly visible on every control. */
+:focus-visible {
+  outline: 3px solid var(--green);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+/* WCAG 2.5.8: comfortable tap targets on touch devices. */
+@media (pointer: coarse) {
+  .footer-links a { display: inline-block; padding: 7px 0; }
+  .faq-question   { min-height: 48px; }
+}
+
+/* Long prose should not stretch the full 1560px container. */
+@media (min-width: 1600px) {
+  .about-text p, .faq-answer p { max-width: 72ch; }
+}

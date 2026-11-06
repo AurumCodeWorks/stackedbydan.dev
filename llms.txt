@@ -4,7 +4,7 @@
 
 Key facts:
 
-- Person: Daniel Golding ("Dan"), full stack developer, Head of IT Services as a day job, 10+ years' experience.
+- Person: Daniel Golding ("Dan"), full stack developer, 10+ years' experience. Builder of DocketSecure (e-signature SaaS), MyCanvasDesign (online design tool) and FrontendHelpers (free dev tools).
 - Location: United Kingdom (GMT/BST). Works remotely with clients across the UK and Europe.
 - Contact: hello@stackedbydan.dev or the form at https://stackedbydan.dev/#contact. Replies within 24 hours.
 - No WordPress, Wix, Squarespace or page builders. Every site is hand-coded in HTML, CSS and JavaScript and hosted on Cloudflare. Clients own the code outright.
@@ -16,6 +16,14 @@ Key facts:
 - Business, £999: 8 to 15 pages, advanced SEO and structured data, sitemap and robots.txt, content management and handover documentation.
 - Optional extras after launch, only for completed projects and never required: managed hosting £25/month, or managed hosting plus content updates and security patches £49/month. Most clients take the code and host it themselves.
 - Privacy policy, cookie policy, terms and a cookie banner are included free on every build.
+
+## SEO and audit pricing (one-off, GBP)
+
+- Website audit and SEO pass, £100: sites of 1 to 3 pages.
+- Website audit and SEO pass, £150: sites of 4 to 7 pages.
+- Website audit and SEO pass, £200: sites of 8 to 15 pages.
+- Larger sites quoted individually. Fixing what the audit finds is quoted separately after the report.
+- AI-generated code review, hardening and deployment: quoted per project; the initial review and assessment is free.
 
 ## Other services
 
@@ -42,6 +50,18 @@ Key facts:
 
 - [Home: services, prices, work and FAQ](https://stackedbydan.dev/): Overview of website packages, Cloudflare services, portfolio and contact form.
 - [Cloudflare developer](https://stackedbydan.dev/cloudflare-developer): Cloudflare Workers, Pages, D1, KV, R2 and Durable Objects services, example projects and a case study of how stackedbydan.dev runs on Cloudflare.
+- [AI-generated code to production](https://stackedbydan.dev/ai-generated-code-to-production): Taking prototypes built with Lovable, Bolt, v0, Cursor, Replit, ChatGPT or Claude, reviewing and securing them, adding real authentication and databases, and deploying them on Cloudflare. Quoted per project after a free code review.
+- [Small business website design](https://stackedbydan.dev/small-business-website-design): What is included in a hand-coded small business website, who it suits, fixed prices and the build process.
+- [Websites for sole traders and tradespeople](https://stackedbydan.dev/sole-trader-website): One to three page websites from £249 for sole traders and trades, what such a site needs and how customers find it.
+- [Alternative to WordPress](https://stackedbydan.dev/wordpress-alternative): Why people leave WordPress, where WordPress is still the right choice, what is built instead, and how a migration preserves search rankings.
+- [Website speed and health audit](https://stackedbydan.dev/website-speed-audit): What a site audit covers (speed, Core Web Vitals, mobile, technical SEO, accessibility, security) and what the written report contains. Priced by page count: £100 for 1-3 pages, £150 for 4-7, £200 for 8-15.
+- [How much does a website cost in the UK](https://stackedbydan.dev/website-cost-uk): Honest price ranges for DIY builders, freelancers and agencies, what drives the price, hidden costs and how to compare quotes.
+
+## Live products built by Dan
+
+- [Docket Secure](https://docketsecure.com): Web-based e-signature product. Upload a PDF, place signature, initial, date, text and checkbox fields, send a secure signing link and download the signed copy. React, TypeScript, Hono, Cloudflare Workers, D1 and R2.
+- [MyCanvasDesign](https://mycanvasdesign.com): Free online design editor for posters, flyers, invitations and social posts, with a PDF editor and flowchart maker. No sign-up and no watermarks.
+- [FrontendHelpers](https://frontendhelpers.com): Free browser-based SEO and web development tools, plus a CSS animation library and written guides.
 
 ## Demo websites
 
