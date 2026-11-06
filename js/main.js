@@ -474,7 +474,10 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
   if (!select) return;
 
   function choose(value) {
-    const opt = Array.from(select.options).find(o => o.value === value);
+    const opts = Array.from(select.options);
+    // Exact match first (pricing buttons pass the full option value),
+    // then prefix match so a short key such as 'Starter' finds the priced option.
+    const opt = opts.find(o => o.value === value) || opts.find(o => o.value.indexOf(value) === 0);
     if (opt) select.value = opt.value;
   }
 
@@ -485,8 +488,14 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
 
   // From other pages: /?project=cloudflare#contact
   const param = new URLSearchParams(location.search).get('project');
-  if (param === 'cloudflare') choose('Cloudflare work');
-  else if (param === 'audit') choose('Website audit');
+  const MAP = {
+    cloudflare: 'Cloudflare work',
+    audit:      'Website audit',
+    starter:    'Starter',
+    migration:  'Moving off WordPress',
+    'ai-code':  'AI code to production',
+  };
+  if (param && MAP[param]) choose(MAP[param]);
 })();
 
 
