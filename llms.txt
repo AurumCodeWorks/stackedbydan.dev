@@ -63,6 +63,13 @@ Key facts:
 - [MyCanvasDesign](https://mycanvasdesign.com): Free online design editor for posters, flyers, invitations and social posts, with a PDF editor and flowchart maker. No sign-up and no watermarks.
 - [FrontendHelpers](https://frontendhelpers.com): Free browser-based SEO and web development tools, plus a CSS animation library and written guides.
 
+## MSP platforms (in production use, still in development)
+
+- OrderPip: purchase order and procurement platform. Raising POs, invoicing, fulfilment, order tracking, profit insights, customer and supplier portals. Angular, Node.js, PostgreSQL.
+- KineticFlow: support desk and ticketing system. Runs ticket flows end to end, from automated email through triage, assignment and SLA tracking to resolution. Angular, Node.js, ScyllaDB.
+- MPSPIP: printer fleet management with deployable data collection agents that gather meter readings and device data remotely. Angular, Node.js, ScyllaDB.
+- All three are built and maintained by Dan and are in day-to-day use at a working managed service provider. SaaS releases are planned.
+
 ## Demo websites
 
 - [Meridian](https://demo1.stackedbydan.dev): Starter-package demo for an advisory firm (fictional business).
